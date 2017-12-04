@@ -83,12 +83,15 @@ setup(
     cmdclass={'test': PyTest},
     classifiers=[
         'Development Status :: 4 - Beta',
-        'Environment :: Cross-platform',
-        'Intended Audience :: Developers/Sys Admins',
-        'License :: MIT',
+        'Intended Audience :: Developers',
+        'Intended Audience :: System Administrators',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Internet :: DevOps :: System',
+        'Environment :: Console',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
+        'Topic :: System :: Shells',
+        'Topic :: System :: Systems Administration',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ]
 )
