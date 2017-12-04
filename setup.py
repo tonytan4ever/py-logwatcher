@@ -66,6 +66,9 @@ setup(
     name='py-logwatcher',
     version='0.0.0',
     url='https://github.com/tonytan4ever/py-logwatcher',
+    download_url=(
+        'https://github.com/tonytan4ever/py-logwatcher/archive/0.0.tar.gz'
+    ),
     license='MIT',
     author='Tony Tan',
     author_email='tonytan198211@gmail.com',
