@@ -60,7 +60,7 @@ class PyTest(TestCommand):
 if os.path.exists("requirements.txt"):
     install_requires, dependency_links = get_requirements()
 else:
-    install_requires, dependency_links = (None, None)
+    install_requires, dependency_links = ([], [])
 
 setup(
     name='py-logwatcher',
@@ -71,7 +71,7 @@ setup(
     author_email='tonytan198211@gmail.com',
     description=('Python implementation of tail -- A log file watcher'),
     long_description=get_long_description(),
-    packages=find_packages(),
+    packages=[p for p in find_packages() if p != 'test'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',
