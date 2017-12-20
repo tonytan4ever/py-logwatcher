@@ -75,6 +75,9 @@ setup(
     description=('Python implementation of tail -- A log file watcher'),
     long_description=get_long_description(),
     packages=[p for p in find_packages() if p != 'test'],
+    entry_points={
+        'console_scripts': ['py-tail=cmd.tail:run']
+    },
     zip_safe=False,
     include_package_data=True,
     platforms='any',
